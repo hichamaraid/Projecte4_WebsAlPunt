@@ -48,3 +48,18 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+Route::resource('categories', App\Http\Controllers\CategoryController::class);
+
+
+Route::resource('comments', App\Http\Controllers\CommentController::class);
+
+
+Route::resource('courses', App\Http\Controllers\courseController::class);
+
+
+Route::resource('courseUsers', App\Http\Controllers\CourseUserController::class);
+
+
+Route::resource('payments', App\Http\Controllers\PaymentController::class);

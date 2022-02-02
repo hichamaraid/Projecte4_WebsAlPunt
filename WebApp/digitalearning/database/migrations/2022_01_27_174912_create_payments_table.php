@@ -20,7 +20,7 @@ class CreatePaymentsTable extends Migration
             $table->integer('course_id')->nullable();
             $table->double('amount',10,2);
             $table->string ('status')->default('started_payment');
-            $table->string('mode of payment')->nullable();
+            $table->string('mode_of_payment')->nullable();
             $table->string('payment_processor')->nullable();
             $table->softDeletes();
             $table->timestamps();
