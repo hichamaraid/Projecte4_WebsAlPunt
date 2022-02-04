@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateViewsTable extends Migration
+class CreateRolesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,9 @@ class CreateViewsTable extends Migration
      */
     public function up()
     {
-        Schema::create('views', function (Blueprint $table) {
+        Schema::create('roles', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('user_id');
-            $table->integer('user_account_id')->nullable();
-            $table->integer('category_id')->nullable();
-            $table->integer('course_id')->nullable();
-            $table->integer('item_id')->nullable();
+            $table->string('name');//Admin 1, moderators 2, instructors 3, student 4
             $table->softDeletes();
             $table->timestamps();
         });
@@ -32,6 +28,6 @@ class CreateViewsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('views');
+        Schema::dropIfExists('roles');
     }
 }
