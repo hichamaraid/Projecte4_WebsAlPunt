@@ -27,7 +27,6 @@ class CreateUsersTable extends Migration
             $table->integer('view_count')->default(0);
             $table->rememberToken();
             $table->softDeletes();
-
             $table->timestamps();
         });
     }
