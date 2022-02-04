@@ -66,3 +66,12 @@ Route::resource('payments', App\Http\Controllers\PaymentController::class);
 
 
 Route::resource('users', App\Http\Controllers\UserController::class);
+
+
+Route::resource('views', App\Http\Controllers\ViewController::class);
+
+
+Route::resource('items', App\Http\Controllers\ItemController::class);
+
+
+Route::resource('roles', App\Http\Controllers\RoleController::class);
