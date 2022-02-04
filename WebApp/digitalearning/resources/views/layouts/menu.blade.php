@@ -46,3 +46,11 @@
 </li>
 
 
+<li class="nav-item">
+    <a href="{{ route('views.index') }}"
+       class="nav-link {{ Request::is('views*') ? 'active' : '' }}">
+        <p>Views</p>
+    </a>
+</li>
+
+
