@@ -63,3 +63,6 @@ Route::resource('courseUsers', App\Http\Controllers\CourseUserController::class)
 
 
 Route::resource('payments', App\Http\Controllers\PaymentController::class);
+
+
+Route::resource('users', App\Http\Controllers\UserController::class);
