@@ -32,6 +32,7 @@ class UserFactory extends Factory
         'email_verified_at' => $this->faker->date('Y-m-d H:i:s'),
         'password' => $this->faker->word,
         'view_count' => $this->faker->randomDigitNotNull,
+        'role_id' => $this->faker->randomDigitNotNull,
         'remember_token' => $this->faker->word,
         'deleted_at' => $this->faker->date('Y-m-d H:i:s'),
         'created_at' => $this->faker->date('Y-m-d H:i:s'),

@@ -1,3 +1,12 @@
+
+
+
+
+
+
+
+
+@if(Auth::user()->role_id == 1)
 <li class="nav-item">
     <a href="{{ route('categories.index') }}"
        class="nav-link {{ Request::is('categories*') ? 'active' : '' }}">
@@ -16,7 +25,7 @@
 <li class="nav-item">
     <a href="{{ route('courses.index') }}"
        class="nav-link {{ Request::is('courses*') ? 'active' : '' }}">
-        <p>Courses</p>
+        <p>My Courses</p>
     </a>
 </li>
 
@@ -36,8 +45,6 @@
         <p>Items</p>
     </a>
 </li>
-
-
 
 
 
@@ -64,10 +71,6 @@
     </a>
 </li>
 
-
-
-
-
 <li class="nav-item">
     <a href="{{ route('roles.index') }}"
        class="nav-link {{ Request::is('roles*') ? 'active' : '' }}">
@@ -75,4 +78,56 @@
     </a>
 </li>
 
+@endif
+
+
+
+
+
+@if(Auth::user()->role_id == 2)
+
+<li class="nav-item">
+    <a href="{{ route('categories.index') }}"
+       class="nav-link {{ Request::is('categories*') ? 'active' : '' }}">
+        <p>All Courses</p>
+    </a>
+</li>
+
+<li class="nav-item">
+    <a href="{{ route('courseUsers.index') }}"
+       class="nav-link {{ Request::is('courseUsers*') ? 'active' : '' }}">
+        <p>Subscriptions</p>
+    </a>
+</li>
+
+<li class="nav-item">
+    <a href="{{ route('courses.index') }}"
+       class="nav-link {{ Request::is('courses*') ? 'active' : '' }}">
+        <p>My Courses</p>
+    </a>
+</li>
+
+
+@endif
+
+
+
+
+@if(Auth::user()->role_id == 3)
+
+<li class="nav-item">
+    <a href="{{ route('categories.index') }}"
+       class="nav-link {{ Request::is('categories*') ? 'active' : '' }}">
+        <p>All Courses</p>
+    </a>
+</li>
+
+<li class="nav-item">
+    <a href="{{ route('courseUsers.index') }}"
+       class="nav-link {{ Request::is('courseUsers*') ? 'active' : '' }}">
+        <p>Subscriptions</p>
+    </a>
+</li>
+
+@endif
 
