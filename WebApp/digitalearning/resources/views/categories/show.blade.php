@@ -22,6 +22,9 @@
             <div class="card-body">
                 <div class="row">
                     @include('categories.show_fields')
+
+                   <h2 class="text-center w-100">Courses</h2> 
+                    @include('courses.table')
                 </div>
             </div>
         </div>
