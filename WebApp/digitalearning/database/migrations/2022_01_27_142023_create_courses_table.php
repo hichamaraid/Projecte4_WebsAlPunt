@@ -15,18 +15,35 @@ class CreateCoursesTable extends Migration
     {
         Schema::create('courses', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('user_id');
-            $table->integer('category_id');
+            $table->integer('user_id')->nullable();
+
+            //creacio de cursos
+            $table->integer('category_id')->nullable();
             $table->string('title');
+            $table->string('sub_title')->nullable();
             $table->longText('description');
-            $table->longText('about_instructor');
+            $table->longText('about_instructor')->nullable();
+            $table->string('playlist_url');
+            $table->string('tags')->nullable();
+            $table->string('photo')->nullable(); 
+            $table->string('promo_video_url')->nullable();
+            $table->integer('creator_status')->default(0);
+            $table->integer('admin_status')->default(0);
+
+            //estudiants
+            $table->longText('what_will_students_learn')->nullable();
+            $table->longText('target_students')->nullable();
+            $table->longText('requirements')->nullable();
+            
+            //preu i cupons
             $table->double('discount_price',10,2);
             $table->double('actual_price',10,2);
-            $table->string('playlist_url');
+
+            //estat
             $table->integer('view_count')->default(0);
             $table->integer('subscriber_count')->default(0);
-            $table->integer('status')->default(0);
-            $table->string('photo')->nullable();
+            
+
             $table-> softDeletes();
             $table->timestamps();
         });

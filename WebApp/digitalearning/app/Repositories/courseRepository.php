@@ -2,16 +2,16 @@
 
 namespace App\Repositories;
 
-use App\Models\course;
+use App\Models\Course;
 use App\Repositories\BaseRepository;
 
 /**
- * Class courseRepository
+ * Class CourseRepository
  * @package App\Repositories
- * @version February 2, 2022, 4:01 pm UTC
+ * @version February 8, 2022, 3:22 pm UTC
 */
 
-class courseRepository extends BaseRepository
+class CourseRepository extends BaseRepository
 {
     /**
      * @var array
@@ -20,15 +20,22 @@ class courseRepository extends BaseRepository
         'user_id',
         'category_id',
         'title',
+        'sub_title',
         'description',
         'about_instructor',
+        'playlist_url',
+        'tags',
+        'photo',
+        'promo_video_url',
+        'creator_status',
+        'admin_status',
+        'what_will_students_learn',
+        'target_students',
+        'requirements',
         'discount_price',
         'actual_price',
-        'playlist_url',
         'view_count',
-        'subscriber_count',
-        'status',
-        'photo'
+        'subscriber_count'
     ];
 
     /**
@@ -46,6 +53,6 @@ class courseRepository extends BaseRepository
      **/
     public function model()
     {
-        return course::class;
+        return Course::class;
     }
 }

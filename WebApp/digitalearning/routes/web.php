@@ -75,3 +75,6 @@ Route::resource('items', App\Http\Controllers\ItemController::class);
 
 
 Route::resource('roles', App\Http\Controllers\RoleController::class);
+
+
+Route::resource('coupons', App\Http\Controllers\CouponController::class);
