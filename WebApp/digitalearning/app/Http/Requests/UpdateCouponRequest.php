@@ -3,9 +3,9 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-use App\Models\Course;
+use App\Models\Coupon;
 
-class UpdateCourseRequest extends FormRequest
+class UpdateCouponRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,7 +24,7 @@ class UpdateCourseRequest extends FormRequest
      */
     public function rules()
     {
-        $rules = Course::$rules;
+        $rules = Coupon::$rules;
         
         return $rules;
     }

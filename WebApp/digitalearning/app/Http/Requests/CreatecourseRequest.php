@@ -3,11 +3,10 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-use App\Models\course;
+use App\Models\Course;
 
-class CreatecourseRequest extends FormRequest
+class CreateCourseRequest extends FormRequest
 {
-
     /**
      * Determine if the user is authorized to make this request.
      *
@@ -25,6 +24,6 @@ class CreatecourseRequest extends FormRequest
      */
     public function rules()
     {
-        return course::$rules;
+        return Course::$rules;
     }
 }

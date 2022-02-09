@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 @if(Auth::user()->role_id == 1)
 <li class="nav-item">
     <a href="{{ route('categories.index') }}"
@@ -130,4 +122,20 @@
 </li>
 
 @endif
+
+<li class="nav-item">
+    <a href="{{ route('courses.index') }}"
+       class="nav-link {{ Request::is('courses*') ? 'active' : '' }}">
+        <p>Courses</p>
+    </a>
+</li>
+
+
+<li class="nav-item">
+    <a href="{{ route('coupons.index') }}"
+       class="nav-link {{ Request::is('coupons*') ? 'active' : '' }}">
+        <p>Coupons</p>
+    </a>
+</li>
+
 
