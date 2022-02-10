@@ -110,5 +110,12 @@ class User extends Authenticatable
         'updated_at' => 'nullable'
     ];
 
+    public function role(){
+        return $this->belongsTo('App\Models\Role'); 
+    }
+
+    public function courses(){
+        return $this->belongsToMany('App\Models\Course'); 
+    }
     
 }
