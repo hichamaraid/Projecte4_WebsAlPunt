@@ -1,3 +1,8 @@
+<!-- Title Field -->
+<div class="col-sm-12">
+    <h1>{{ $course->title }}</h1>
+</div>
+
 <!-- User Id Field -->
 <div class="col-sm-12">
     {!! Form::label('user_id', 'User Id:') !!}
@@ -7,14 +12,21 @@
 <!-- Category Id Field -->
 <div class="col-sm-12">
     {!! Form::label('category_id', 'Category Id:') !!}
-    <p>{{ $course->category_id }}</p>
+    <p>{{ $course->category['name'] }}</p>
 </div>
 
-<!-- Title Field -->
+<!-- Update Id Field -->
 <div class="col-sm-12">
-    {!! Form::label('title', 'Title:') !!}
-    <p>{{ $course->title }}</p>
+    {!! Form::label('updated_at', 'updated At:') !!}
+    <p>{{ $course->updated_at }}</p>
 </div>
+
+<!-- Create Id Field -->
+<div class="col-sm-12">
+    {!! Form::label('created_at', 'created At:') !!}
+    <p>{{ $course->created_at }}</p>
+</div>
+
 
 <!-- Sub Title Field -->
 <div class="col-sm-12">
@@ -58,6 +70,7 @@
     <p>{{ $course->promo_video_url }}</p>
 </div>
 
+@if(Auth::user()->role_id ==1 ||Auth::user()->id == $course->user_id)
 <!-- Creator Status Field -->
 <div class="col-sm-12">
     {!! Form::label('creator_status', 'Creator Status:') !!}
@@ -69,7 +82,7 @@
     {!! Form::label('admin_status', 'Admin Status:') !!}
     <p>{{ $course->admin_status }}</p>
 </div>
-
+@endif
 <!-- What Will Students Learn Field -->
 <div class="col-sm-12">
     {!! Form::label('what_will_students_learn', 'What Will Students Learn:') !!}
