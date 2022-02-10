@@ -78,3 +78,9 @@ Route::resource('roles', App\Http\Controllers\RoleController::class);
 
 
 Route::resource('coupons', App\Http\Controllers\CouponController::class);
+
+
+Route::get('/Nosotros', [App\Http\Controllers\nosotrosController::class, 'NosotrosCtrl'])->name("nosotros");
+
+
+Route::get('/Contacto', [App\Http\Controllers\contactoController::class, 'ContactoCtrl'])->name("contacto");
