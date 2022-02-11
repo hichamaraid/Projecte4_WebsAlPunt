@@ -30,19 +30,20 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+
+
 </head>
-<body class="hold-transition login-page">
+<body class="hold-transition login-page" style="background-image: url('https://fondosmil.com/fondo/35152.jpg');">
 <div class="login-box">
-    <div class="login-logo">
-        <a href="{{ url('/home') }}"><b>{{ config('app.name') }}</b></a>
+    <div class="login-logo" >
+        <h1 href="{{ url('/home') }}"><b style="color: orange;">INICIAR SESSIÓ</b></h1>
     </div>
 
     <!-- /.login-logo -->
 
     <!-- /.login-box-body -->
-    <div class="card">
-        <div class="card-body login-card-body">
-            <p class="login-box-msg">Sign in to start your session</p>
+    <div class="card" >
+        <div class="card-body login-card-body"  style="border-radius: 15px; ">
 
             <form method="post" action="{{ url('/login') }}">
                 @csrf
@@ -51,7 +52,7 @@
                     <input type="email"
                            name="email"
                            value="{{ old('email') }}"
-                           placeholder="Email"
+                           placeholder="Correu Electrònic"
                            class="form-control @error('email') is-invalid @enderror">
                     <div class="input-group-append">
                         <div class="input-group-text"><span class="fas fa-envelope"></span></div>
@@ -64,7 +65,7 @@
                 <div class="input-group mb-3">
                     <input type="password"
                            name="password"
-                           placeholder="Password"
+                           placeholder="Contrasenya"
                            class="form-control @error('password') is-invalid @enderror">
                     <div class="input-group-append">
                         <div class="input-group-text">
@@ -81,22 +82,20 @@
                     <div class="col-8">
                         <div class="icheck-primary">
                             <input type="checkbox" id="remember">
-                            <label for="remember">Remember Me</label>
+                            <label for="remember">Mantenir Sessió</label>
                         </div>
                     </div>
 
                     <div class="col-4">
-                        <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                        <button type="submit" class="btn btn-primary btn-block">Accedir</button>
                     </div>
 
                 </div>
             </form>
 
-            <p class="mb-1">
-                <a href="{{ route('password.request') }}">I forgot my password</a>
-            </p>
+           
             <p class="mb-0">
-                <a href="{{ route('register') }}" class="text-center">Register a new membership</a>
+                <a href="{{ route('register') }}" class="text-center">Registrar</a>
             </p>
         </div>
         <!-- /.login-card-body -->
