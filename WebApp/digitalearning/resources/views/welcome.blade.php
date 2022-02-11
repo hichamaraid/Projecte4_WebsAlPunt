@@ -81,15 +81,3 @@
   @include('Footer')
   </body>
 </html>
-
-
-            
-            
-            
-            
-            
-            
-            
-            
-            
-         
