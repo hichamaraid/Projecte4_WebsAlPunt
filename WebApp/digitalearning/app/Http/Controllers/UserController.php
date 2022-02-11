@@ -26,7 +26,7 @@ class UserController extends AppBaseController
      * Display a listing of the User.
      *
      * @param Request $request
-     *
+     * 
      * @return Response
      */
     public function index(Request $request)
