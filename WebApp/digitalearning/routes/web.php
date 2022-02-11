@@ -84,3 +84,6 @@ Route::get('/Nosotros', [App\Http\Controllers\nosotrosController::class, 'Nosotr
 
 
 Route::get('/Contacto', [App\Http\Controllers\contactoController::class, 'ContactoCtrl'])->name("contacto");
+
+
+Route::get('/Welcome', [App\Http\Controllers\welcomeController::class, 'WelcomeCtrl'])->name("welcome");
