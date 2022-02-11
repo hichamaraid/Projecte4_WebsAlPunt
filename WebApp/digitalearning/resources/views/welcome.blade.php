@@ -57,7 +57,7 @@
     <img src="{{ asset('Images/sql-scroll.png')}}" alt="foto" class="iconos-img">
   </div>
   <div>
-    <img src="{{ asset('Images/java-scroll.png')}}" alt="foto" class="iconos-img">
+    <img src="{{ asset('Images/java.png')}}" alt="foto" class="iconos-img">
   </div>
   <div>
     <img src="{{ asset('Images/php-scroll.png')}}" alt="foto" class="iconos-img">

@@ -1,15 +1,15 @@
   <nav class="navbar has-shadow">
     <div class="navbar-brand">
-      <a href="{{ route('home') }}" class="navbar-item">
-        <img src="{{ asset('Images/logo.png')}}" alt="fdf">
+      <a href="{{ route('welcome') }}" class="navbar-item">
+        <img src="{{ asset('Images/logo.png')}}" alt="logo">
       </a>
     </div>
 
     <div class="navbar-menu" id="nav-links">
       <div class="navbar-end">
-          <a href="{{ route('home') }}" class="navbar-item">INICI</a>
-          <a href="{{ route('nosotros') }}" class="navbar-item">NOSALTRES</a>
-          <a href="{{ route('contacto') }}" class="navbar-item">CONTACTE</a>
+          <a style="background: transparent;" href="{{ route('welcome') }}" class="navbar-item">INICI</a>
+          <a style="background: transparent;" href="{{ route('nosotros') }}" class="navbar-item">NOSALTRES</a>
+          <a style="background: transparent;" href="{{ route('contacto') }}" class="navbar-item">CONTACTE</a>
        
 
 
