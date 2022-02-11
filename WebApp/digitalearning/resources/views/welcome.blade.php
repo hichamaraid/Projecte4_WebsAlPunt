@@ -48,29 +48,28 @@
   <img src="{{ asset('Images/tres-puntos.png')}}" alt="foto" class="iconos-img">
 </div>
 
-
-<div class="scroll-horizontal">
-  <div>
-    <img src="{{ asset('Images/bulma-scroll.png')}}" alt="foto" class="iconos-img">
+<div class="max-section-hero-dbl-scroll">
+  <div class="scroll-horizontal">
+    <div>
+      <img src="{{ asset('Images/bulma-scroll.png')}}" alt="foto" class="iconos-img">
+    </div>
+    <div>
+      <img src="{{ asset('Images/sql-scroll.png')}}" alt="foto" class="iconos-img">
+    </div>
+    <div>
+      <img src="{{ asset('Images/java.png')}}" alt="foto" class="iconos-img">
+    </div>
+    <div>
+      <img src="{{ asset('Images/php-scroll.png')}}" alt="foto" class="iconos-img">
+    </div>
+    <div>
+      <img src="{{ asset('Images/laravel-scroll.png')}}" alt="foto" class="iconos-img">
+    </div>
+    <div>
+      <img src="{{ asset('Images/vue-scroll.png')}}" alt="foto" class="iconos-img">
+    </div>
   </div>
-  <div>
-    <img src="{{ asset('Images/sql-scroll.png')}}" alt="foto" class="iconos-img">
-  </div>
-  <div>
-    <img src="{{ asset('Images/java.png')}}" alt="foto" class="iconos-img">
-  </div>
-  <div>
-    <img src="{{ asset('Images/php-scroll.png')}}" alt="foto" class="iconos-img">
-  </div>
-  <div>
-    <img src="{{ asset('Images/laravel-scroll.png')}}" alt="foto" class="iconos-img">
-  </div>
-  <div>
-    <img src="{{ asset('Images/vue-scroll.png')}}" alt="foto" class="iconos-img">
-  </div>
-
 </div>
-
 
 
 
