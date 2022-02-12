@@ -1,12 +1,4 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/estilos.css">
-    <title>DIGITALEARNING</title>
-  </head>
+@include('Head')
   <body id="fondo-home">
   @include('Nav')
 <div class="img-home">
@@ -16,6 +8,29 @@
         <img src="{{ asset('Images/libro.png')}}" alt="fdf" id="foto-home">
     </div>
 </div>
+
+
+
+
+<div class="centrar-text-animado">
+  <div class="text">
+    <p>Aprendre és </p>
+    <p>
+      <span class="word wisteria"> divertit.</span>
+      <span class="word belize">meravellós.</span>
+      <span class="word pomegranate">extraordinari.</span>
+      <span class="word green">increïble.</span>
+      <span class="word midnight">brillant.</span>
+    </p>
+  </div>
+</div>
+
+
+
+
+
+
+
 
 <div class="flex-home">
     <div class="flex-one">
@@ -48,6 +63,9 @@
   <img src="{{ asset('Images/tres-puntos.png')}}" alt="foto" class="iconos-img">
 </div>
 
+
+
+
 <div class="max-section-hero-dbl-scroll">
   <div class="scroll-horizontal">
     <div>
@@ -78,5 +96,6 @@
 
 
   @include('Footer')
+
   </body>
 </html>
