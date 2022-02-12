@@ -735,7 +735,22 @@ li > a:hover:before{
         width: 100%;
     }
     nav ul.show{
-        max-height: 20em;
+        max-height: 23em;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        overflow: hidden;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        transition: max-height 0.5s;
+        -webkit-transition: max-height 0.5s;
+        -moz-transition: max-height 0.5s;
+        -ms-transition: max-height 0.5s;
+        -o-transition: max-height 0.5s;
+        flex-direction: column;
+        padding-top: -47px;
     }
     nav ul li{
         box-sizing: border-box;
