@@ -63,5 +63,11 @@ class Category extends Model
         'updated_at' => 'nullable'
     ];
 
+
+    public function courses(){
+        return $this->hasMany(course::class);
+    }
+
     
+
 }

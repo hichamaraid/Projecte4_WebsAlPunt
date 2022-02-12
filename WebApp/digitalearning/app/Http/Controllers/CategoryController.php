@@ -160,4 +160,6 @@ class CategoryController extends AppBaseController
 
         return redirect(route('categories.index'));
     }
+
+
 }
