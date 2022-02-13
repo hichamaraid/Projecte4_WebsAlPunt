@@ -26,23 +26,10 @@ class CreateCoursesTable extends Migration
             $table->string('playlist_url');
             $table->string('tags')->nullable();
             $table->string('photo')->nullable(); 
-            $table->string('promo_video_url')->nullable();
-            $table->integer('creator_status')->default(0);
-            $table->integer('admin_status')->default(0);
-
-            //estudiants
-            $table->longText('what_will_students_learn')->nullable();
-            $table->longText('target_students')->nullable();
-            $table->longText('requirements')->nullable();
-            
-            //preu i cupons
-            $table->double('discount_price',10,2);
-            $table->double('actual_price',10,2);
 
             //estat
             $table->integer('view_count')->default(0);
-            $table->integer('subscriber_count')->default(0);
-            
+            $table->integer('subscriber_count')->default(0); 
 
             $table-> softDeletes();
             $table->timestamps();

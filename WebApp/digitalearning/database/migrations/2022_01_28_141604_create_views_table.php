@@ -19,7 +19,6 @@ class CreateViewsTable extends Migration
             $table->integer('user_account_id')->nullable();
             $table->integer('category_id')->nullable();
             $table->integer('course_id')->nullable();
-            $table->integer('item_id')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });
