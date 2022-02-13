@@ -84,11 +84,16 @@
       <img src="{{ asset('Images/laravel-scroll.png')}}" alt="foto" class="iconos-img">
     </div>
     <div>
-      <img src="{{ asset('Images/vue-scroll.png')}}" alt="foto" class="iconos-img">
+      <img src="{{ asset('Images/vue-scroll.jpg')}}" alt="foto" class="iconos-img">
     </div>
   </div>
 </div>
 
+
+
+<div id="app">
+  <example />
+</div>
 
 
 
