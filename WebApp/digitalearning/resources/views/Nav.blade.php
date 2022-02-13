@@ -46,7 +46,7 @@
 
           @if (Route::has('login') && Auth::check())
               
-                   <li> <a style="background-color: yellow; border-radius:5px; margin-right: 5px;" class="navbar-item" href="{{ url('/home') }}">COMPTE</a></li>
+                   <li > <a style="background-color: yellow; border-radius:5px; margin-right: 5px; " class="navbar-item" href="{{ url('/home') }}"><b style="color: black;">COMPTE</b> </a></li>
                
             @elseif (Route::has('login') && !Auth::check())
                
