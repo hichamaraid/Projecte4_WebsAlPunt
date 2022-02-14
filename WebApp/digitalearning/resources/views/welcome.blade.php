@@ -94,7 +94,6 @@
 
 
 
-
   @include('Footer')
 
   </body>
