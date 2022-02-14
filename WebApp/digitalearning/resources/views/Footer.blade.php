@@ -4,7 +4,7 @@
       <strong>DigitalEarning </strong> by <a href="https://github.com/hichamaraid">Hicham & </a> <a href="https://github.com/George11849">George</a>. 
       <strong> &copy; Copyright  2022 by DigitalEarning. All Rights Reserved. </strong>
     </p>
-  </div>
+  </div> 
 </footer>
 
 <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
