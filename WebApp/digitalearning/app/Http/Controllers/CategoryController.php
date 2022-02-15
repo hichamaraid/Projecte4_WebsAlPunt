@@ -9,11 +9,10 @@ use App\Http\Controllers\AppBaseController;
 use Illuminate\Http\Request;
 use Flash;
 use Response;
-use App\Models\Course;
-use Illuminate\Support\Facades\DB;
+
 class CategoryController extends AppBaseController
 {
-    /** @var  CategoryRepository */
+    /** @var CategoryRepository $categoryRepository*/
     private $categoryRepository;
 
     public function __construct(CategoryRepository $categoryRepo)
@@ -81,13 +80,7 @@ class CategoryController extends AppBaseController
             return redirect(route('categories.index'));
         }
 
-        DB::table('categories')->where('id',$id)->increment('views_count');
-        $courses = Course::where('category_id',$category->id)->get();
-
-        return view('categories.show')
-        ->with('category', $category)
-        ->with('courses', $courses)
-        ;
+        return view('categories.show')->with('category', $category);
     }
 
     /**
@@ -160,6 +153,4 @@ class CategoryController extends AppBaseController
 
         return redirect(route('categories.index'));
     }
-
-
 }

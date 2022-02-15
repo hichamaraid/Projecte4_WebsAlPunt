@@ -7,21 +7,22 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 /**
- * Class Category
+ * Class CourseUser
  * @package App\Models
- * @version February 15, 2022, 6:20 pm UTC
+ * @version February 15, 2022, 6:25 pm UTC
  *
- * @property string $name
- * @property string $description
- * @property integer $views_count
+ * @property integer $user_id
+ * @property integer $course_id
+ * @property integer $user_account_id
+ * @property boolean $status
  */
-class Category extends Model
+class CourseUser extends Model
 {
     use SoftDeletes;
 
     use HasFactory;
 
-    public $table = 'categories';
+    public $table = 'course_user';
     
     const CREATED_AT = 'created_at';
     const UPDATED_AT = 'updated_at';
@@ -32,9 +33,10 @@ class Category extends Model
 
 
     public $fillable = [
-        'name',
-        'description',
-        'views_count'
+        'user_id',
+        'course_id',
+        'user_account_id',
+        'status'
     ];
 
     /**
@@ -44,9 +46,10 @@ class Category extends Model
      */
     protected $casts = [
         'id' => 'integer',
-        'name' => 'string',
-        'description' => 'string',
-        'views_count' => 'integer'
+        'user_id' => 'integer',
+        'course_id' => 'integer',
+        'user_account_id' => 'integer',
+        'status' => 'boolean'
     ];
 
     /**
@@ -55,9 +58,10 @@ class Category extends Model
      * @var array
      */
     public static $rules = [
-        'name' => 'required|string|max:191',
-        'description' => 'nullable|string',
-        'views_count' => 'required|integer',
+        'user_id' => 'required|integer',
+        'course_id' => 'required|integer',
+        'user_account_id' => 'required|integer',
+        'status' => 'required|boolean',
         'deleted_at' => 'nullable',
         'created_at' => 'nullable',
         'updated_at' => 'nullable'

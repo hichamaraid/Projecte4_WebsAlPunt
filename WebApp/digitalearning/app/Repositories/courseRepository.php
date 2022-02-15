@@ -8,7 +8,7 @@ use App\Repositories\BaseRepository;
 /**
  * Class CourseRepository
  * @package App\Repositories
- * @version February 8, 2022, 3:22 pm UTC
+ * @version February 15, 2022, 6:23 pm UTC
 */
 
 class CourseRepository extends BaseRepository
@@ -17,25 +17,13 @@ class CourseRepository extends BaseRepository
      * @var array
      */
     protected $fieldSearchable = [
-        'user_id',
         'category_id',
         'title',
         'sub_title',
         'description',
         'about_instructor',
-        'playlist_url',
-        'tags',
-        'photo',
-        'promo_video_url',
-        'creator_status',
-        'admin_status',
-        'what_will_students_learn',
-        'target_students',
-        'requirements',
-        'discount_price',
-        'actual_price',
-        'view_count',
-        'subscriber_count'
+        'url',
+        'view_count'
     ];
 
     /**
