@@ -3,9 +3,9 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-use App\Models\Category;
+use App\Models\CourseUser;
 
-class CreateCategoryRequest extends FormRequest
+class UpdateCourseUserRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,6 +24,8 @@ class CreateCategoryRequest extends FormRequest
      */
     public function rules()
     {
-        return Category::$rules;
+        $rules = CourseUser::$rules;
+        
+        return $rules;
     }
 }

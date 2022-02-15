@@ -1,27 +1,29 @@
 <div class="table-responsive">
-    <table class="table" id="categories-table">
+    <table class="table" id="courseUsers-table">
         <thead>
         <tr>
-            <th>Name</th>
-        <th>Description</th>
-        <th>Views Count</th>
+            <th>User Id</th>
+        <th>Course Id</th>
+        <th>User Account Id</th>
+        <th>Status</th>
             <th colspan="3">Action</th>
         </tr>
         </thead>
         <tbody>
-        @foreach($categories as $category)
+        @foreach($courseUsers as $courseUser)
             <tr>
-                <td>{{ $category->name }}</td>
-            <td>{{ $category->description }}</td>
-            <td>{{ $category->views_count }}</td>
+                <td>{{ $courseUser->user_id }}</td>
+            <td>{{ $courseUser->course_id }}</td>
+            <td>{{ $courseUser->user_account_id }}</td>
+            <td>{{ $courseUser->status }}</td>
                 <td width="120">
-                    {!! Form::open(['route' => ['categories.destroy', $category->id], 'method' => 'delete']) !!}
+                    {!! Form::open(['route' => ['courseUsers.destroy', $courseUser->id], 'method' => 'delete']) !!}
                     <div class='btn-group'>
-                        <a href="{{ route('categories.show', [$category->id]) }}"
+                        <a href="{{ route('courseUsers.show', [$courseUser->id]) }}"
                            class='btn btn-default btn-xs'>
                             <i class="far fa-eye"></i>
                         </a>
-                        <a href="{{ route('categories.edit', [$category->id]) }}"
+                        <a href="{{ route('courseUsers.edit', [$courseUser->id]) }}"
                            class='btn btn-default btn-xs'>
                             <i class="far fa-edit"></i>
                         </a>

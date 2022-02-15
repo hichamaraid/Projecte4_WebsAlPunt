@@ -2,24 +2,25 @@
 
 namespace App\Repositories;
 
-use App\Models\Category;
+use App\Models\CourseUser;
 use App\Repositories\BaseRepository;
 
 /**
- * Class CategoryRepository
+ * Class CourseUserRepository
  * @package App\Repositories
- * @version February 15, 2022, 6:20 pm UTC
+ * @version February 15, 2022, 6:25 pm UTC
 */
 
-class CategoryRepository extends BaseRepository
+class CourseUserRepository extends BaseRepository
 {
     /**
      * @var array
      */
     protected $fieldSearchable = [
-        'name',
-        'description',
-        'views_count'
+        'user_id',
+        'course_id',
+        'user_account_id',
+        'status'
     ];
 
     /**
@@ -37,6 +38,6 @@ class CategoryRepository extends BaseRepository
      **/
     public function model()
     {
-        return Category::class;
+        return CourseUser::class;
     }
 }
