@@ -8,6 +8,7 @@
 </footer>
 
 <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<script src="{{ asset('/js/app.js') }}"></script>
 <!--<script src="js/scrollreveal.js"></script>-->
 <script src="js/index.js"></script>
 <script src="js/nav.js"></script>
