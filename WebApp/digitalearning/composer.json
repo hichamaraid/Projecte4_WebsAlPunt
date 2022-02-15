@@ -64,6 +64,10 @@
         "preferred-install": "dist",
         "sort-packages": true
     },
+    "require": {
+        "php": "^7.3|^8.0",
+        "ext-pgsql": "*"
+      },
     "minimum-stability": "dev",
     "prefer-stable": true
 }
