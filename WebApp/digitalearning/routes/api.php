@@ -1,5 +1,5 @@
 <?php
-use App\Models\Post;
+use App\Models\Anime;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -18,8 +18,11 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();    
 });
 
+Route::get('/anime',function(){
+    return Anime::all();
+}
 
-Route::apiResource('tasks',TaskController::class);
+);
 
 
 
