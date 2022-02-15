@@ -69,30 +69,38 @@
 <div class="max-section-hero-dbl-scroll">
   <div class="scroll-horizontal">
     <div>
-      <img src="{{ asset('Images/bulma-scroll.png')}}" alt="foto" class="iconos-img">
+      <img src="{{ asset('Images/vue-scroll.jpg')}}" alt="foto" class="iconos-img">
     </div>
     <div>
-      <img src="{{ asset('Images/sql-scroll.png')}}" alt="foto" class="iconos-img">
+    <img src="{{ asset('Images/bulma-scroll.png')}}" alt="foto" class="iconos-img">
+
+
     </div>
     <div>
-      <img src="{{ asset('Images/java.png')}}" alt="foto" class="iconos-img">
+    <img src="{{ asset('Images/php-scroll.png')}}" alt="foto" class="iconos-img">
+
     </div>
     <div>
-      <img src="{{ asset('Images/php-scroll.png')}}" alt="foto" class="iconos-img">
+    <img src="{{ asset('Images/sql-scroll.png')}}" alt="foto" class="iconos-img">
+
     </div>
     <div>
       <img src="{{ asset('Images/laravel-scroll.png')}}" alt="foto" class="iconos-img">
     </div>
     <div>
-      <img src="{{ asset('Images/vue-scroll.png')}}" alt="foto" class="iconos-img">
-    </div>
+    <img src="{{ asset('Images/java.png')}}" alt="foto" class="iconos-img">
+
+  </div>
   </div>
 </div>
 
 
 
-
-
+<section class="section" id="app">
+    <div class="container">
+      <welcome></welcome>
+    </div>
+</section>
 
   @include('Footer')
 
