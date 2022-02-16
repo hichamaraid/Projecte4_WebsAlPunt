@@ -10,29 +10,8 @@
     {!! Form::email('email', null, ['class' => 'form-control','maxlength' => 191,'maxlength' => 191]) !!}
 </div>
 
-<!-- First Name Field -->
-<div class="form-group col-sm-6">
-    {!! Form::label('first_name', 'First Name:') !!}
-    {!! Form::text('first_name', null, ['class' => 'form-control','maxlength' => 191,'maxlength' => 191]) !!}
-</div>
 
-<!-- Last Name Field -->
-<div class="form-group col-sm-6">
-    {!! Form::label('last_name', 'Last Name:') !!}
-    {!! Form::text('last_name', null, ['class' => 'form-control','maxlength' => 191,'maxlength' => 191]) !!}
-</div>
 
-<!-- Gender Field -->
-<div class="form-group col-sm-6">
-    {!! Form::label('gender', 'Gender:') !!}
-    {!! Form::text('gender', null, ['class' => 'form-control','maxlength' => 191,'maxlength' => 191]) !!}
-</div>
-
-<!-- Date Of Birth Field -->
-<div class="form-group col-sm-6">
-    {!! Form::label('date_of_birth', 'Date Of Birth:') !!}
-    {!! Form::text('date_of_birth', null, ['class' => 'form-control','id'=>'date_of_birth']) !!}
-</div>
 
 @push('page_scripts')
     <script type="text/javascript">
@@ -44,21 +23,7 @@
     </script>
 @endpush
 
-<!-- Is Suscribed Field -->
-<div class="form-group col-sm-6">
-    <div class="form-check">
-        {!! Form::hidden('is_suscribed', 0, ['class' => 'form-check-input']) !!}
-        {!! Form::checkbox('is_suscribed', '1', null, ['class' => 'form-check-input']) !!}
-        {!! Form::label('is_suscribed', 'Is Suscribed', ['class' => 'form-check-label']) !!}
-    </div>
-</div>
 
-
-<!-- Email Verified At Field -->
-<div class="form-group col-sm-6">
-    {!! Form::label('email_verified_at', 'Email Verified At:') !!}
-    {!! Form::text('email_verified_at', null, ['class' => 'form-control','id'=>'email_verified_at']) !!}
-</div>
 
 @push('page_scripts')
     <script type="text/javascript">
@@ -89,7 +54,7 @@
 </div>
 
 <!-- Remember Token Field -->
-<div class="form-group col-sm-6">
+<div class="form-group col-sm-6" style="display: none;">
     {!! Form::label('remember_token', 'Remember Token:') !!}
     {!! Form::text('remember_token', null, ['class' => 'form-control','maxlength' => 100,'maxlength' => 100]) !!}
 </div>

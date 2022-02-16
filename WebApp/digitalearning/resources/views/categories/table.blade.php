@@ -1,36 +1,54 @@
-<div class="table-responsive">
-    <table class="table" id="categories-table">
-        <thead>
-        <tr>
-            <th>Name</th>
-        <th>Description</th>
-        <th>Views Count</th>
-            <th colspan="3">Action</th>
-        </tr>
-        </thead>
-        <tbody>
+<div class="card-columns">
+
         @foreach($categories as $category)
-            <tr>
-                <td>{{ $category->name }}</td>
-            <td>{{ $category->description }}</td>
-            <td>{{ $category->views_count }}</td>
-                <td width="120">
-                    {!! Form::open(['route' => ['categories.destroy', $category->id], 'method' => 'delete']) !!}
+
+
+
+        
+        <div class="card">  
+  <img src="https://digitallearning.eletsonline.com/wp-content/uploads/2018/12/digital-learning.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{ $category->name }}</h5>
+    <p class="card-text">
+<?php
+echo \Illuminate\Support\Str::limit($category->description ?? '',150,' ...');
+?>
+
+    </p>
+  
+  </div>
+  
+  <div class="card-footer">
+  
+ 
+    {!! Form::open(['route' => ['categories.destroy', $category->id], 'method' => 'delete']) !!}
                     <div class='btn-group'>
-                        <a href="{{ route('categories.show', [$category->id]) }}"
-                           class='btn btn-default btn-xs'>
-                            <i class="far fa-eye"></i>
-                        </a>
-                        <a href="{{ route('categories.edit', [$category->id]) }}"
-                           class='btn btn-default btn-xs'>
+                    <a href="{!! route('categories.show',[$category->id]) !!}" class="btn btn-primary mr-5">View Category</a>
+
+                    @if (Auth::user()->role_id == 1)
+
+                    <a href="{{ route('categories.edit', [$category->id]) }}"
+                           class='btn btn-default   mr-3'>
                             <i class="far fa-edit"></i>
                         </a>
-                        {!! Form::button('<i class="far fa-trash-alt"></i>', ['type' => 'submit', 'class' => 'btn btn-danger btn-xs', 'onclick' => "return confirm('Are you sure?')"]) !!}
-                    </div>
+                        {!! Form::button('<i class="far fa-trash-alt"></i>', ['type' => 'submit', 'class' => 'btn btn-danger', 'onclick' => "return confirm('Are you sure?')"]) !!}
+                    
                     {!! Form::close() !!}
-                </td>
-            </tr>
-        @endforeach
-        </tbody>
-    </table>
+
+                    @endif
+                      
+                    @if (Auth::user()->role_id == 2)
+                        <a href="{{ route('categories.edit', [$category->id]) }}"
+                           class='btn btn-default   mr-3'>
+                            <i class="far fa-edit"></i>
+                        </a>
+                        {!! Form::button('<i class="far fa-trash-alt"></i>', ['type' => 'submit', 'class' => 'btn btn-danger', 'onclick' => "return confirm('Are you sure?')"]) !!}
+                  
+                    {!! Form::close() !!}
+
+                    @endif
+</div>
+  </div>
+  </div>
+@endforeach
 </div>
