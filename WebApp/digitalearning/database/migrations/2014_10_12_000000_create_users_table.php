@@ -20,7 +20,6 @@ class CreateUsersTable extends Migration
             $table->tinyInteger('is_suscribed')->nullable()->default(0);
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->integer('view_count')->default(0);
             $table->integer('role_id')->default(3);
             $table->rememberToken();
             $table->softDeletes();

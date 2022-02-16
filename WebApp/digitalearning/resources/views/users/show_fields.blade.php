@@ -10,41 +10,8 @@
     <p>{{ $user->email }}</p>
 </div>
 
-<!-- First Name Field -->
-<div class="col-sm-12">
-    {!! Form::label('first_name', 'First Name:') !!}
-    <p>{{ $user->first_name }}</p>
-</div>
 
-<!-- Last Name Field -->
-<div class="col-sm-12">
-    {!! Form::label('last_name', 'Last Name:') !!}
-    <p>{{ $user->last_name }}</p>
-</div>
 
-<!-- Gender Field -->
-<div class="col-sm-12">
-    {!! Form::label('gender', 'Gender:') !!}
-    <p>{{ $user->gender }}</p>
-</div>
-
-<!-- Date Of Birth Field -->
-<div class="col-sm-12">
-    {!! Form::label('date_of_birth', 'Date Of Birth:') !!}
-    <p>{{ $user->date_of_birth }}</p>
-</div>
-
-<!-- Is Suscribed Field -->
-<div class="col-sm-12">
-    {!! Form::label('is_suscribed', 'Is Suscribed:') !!}
-    <p>{{ $user->is_suscribed }}</p>
-</div>
-
-<!-- Email Verified At Field -->
-<div class="col-sm-12">
-    {!! Form::label('email_verified_at', 'Email Verified At:') !!}
-    <p>{{ $user->email_verified_at }}</p>
-</div>
 
 <!-- Password Field -->
 <div class="col-sm-12">
@@ -52,11 +19,7 @@
     <p>{{ $user->password }}</p>
 </div>
 
-<!-- View Count Field -->
-<div class="col-sm-12">
-    {!! Form::label('view_count', 'View Count:') !!}
-    <p>{{ $user->view_count }}</p>
-</div>
+
 
 <!-- Role Id Field -->
 <div class="col-sm-12">

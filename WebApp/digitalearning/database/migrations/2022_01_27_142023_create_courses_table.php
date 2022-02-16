@@ -21,7 +21,7 @@ class CreateCoursesTable extends Migration
             $table->longText('description');
             $table->longText('about_instructor')->nullable();
             $table->string('url');
-            $table->integer('view_count')->default(0);
+            $table->integer('view_count');
             $table-> softDeletes();
             $table->timestamps();
         });

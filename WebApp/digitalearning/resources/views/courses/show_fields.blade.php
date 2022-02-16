@@ -35,7 +35,7 @@
 </div>
 
 <!-- View Count Field -->
-<div class="col-sm-12">
+<div class="col-sm-12" style="display:none;">
     {!! Form::label('view_count', 'View Count:') !!}
     <p>{{ $course->view_count }}</p>
 </div>
