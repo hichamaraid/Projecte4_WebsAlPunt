@@ -89,7 +89,4 @@ Route::get('/Contacto', [App\Http\Controllers\contactoController::class, 'Contac
 Route::get('/Welcome', [App\Http\Controllers\welcomeController::class, 'WelcomeCtrl'])->name("welcome");
 
 
-<<<<<<< HEAD
-Route::resource('courseUsers', App\Http\Controllers\CourseUserController::class);
-=======
->>>>>>> heroku2
+

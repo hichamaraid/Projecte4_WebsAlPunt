@@ -23,13 +23,8 @@
                 <div class="row">
                     @include('categories.show_fields')
                     
-                        <h2 class="text-center">Cursos</h2>
-                    
-
-<<<<<<< HEAD
-=======
+            
                    <h2 class="text-center w-100">Cursos</h2> 
->>>>>>> heroku2
                     @include('courses.table')
                 </div>
             </div>
