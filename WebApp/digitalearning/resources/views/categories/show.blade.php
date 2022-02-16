@@ -5,7 +5,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1>Category Details</h1>
+                    <h1>Detalls dels Cursos</h1>
                 </div>
                 <div class="col-sm-6">
                     <a class="btn btn-default float-right"
@@ -23,7 +23,7 @@
                 <div class="row">
                     @include('categories.show_fields')
 
-                   <h2 class="text-center w-100">Courses</h2> 
+                   <h2 class="text-center w-100">Cursos</h2> 
                     @include('courses.table')
                 </div>
             </div>

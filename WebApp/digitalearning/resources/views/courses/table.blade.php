@@ -2,8 +2,8 @@
     <table class="table" id="courses-table">
         <thead>
         <tr>
-        <th>Category Id</th>
-        <th>Description</th>
+        <th>Curso</th>
+        <th>Descripció</th>
     
         <th>Discount Price</th>
         <th>Actual Price</th>

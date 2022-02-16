@@ -1,4 +1,3 @@
-
 <div class="card-columns">
 
         @foreach($categories as $category)

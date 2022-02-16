@@ -12,6 +12,6 @@
 
 <!-- Views Count Field -->
 <div class="form-group col-sm-6" style="display:none;">
-    {!! Form::label('views_count', 'Views Count:') !!}
+    {!! Form::label('views_count', 'Vegades Vist:') !!}
     {!! Form::number('views_count', 0, ['class' => 'form-control']) !!}
 </div>
