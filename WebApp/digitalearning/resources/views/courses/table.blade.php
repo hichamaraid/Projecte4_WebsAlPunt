@@ -2,12 +2,21 @@
     <table class="table" id="courses-table">
         <thead>
         <tr>
+<<<<<<< HEAD
             
         <th>Titol</th>
         <th>Descripció</th>
         <th>Url
         @if(Auth::user()->role_id == 1)   
         </th>
+=======
+        <th>Curso</th>
+        <th>Descripció</th>
+    
+        <th>Discount Price</th>
+        <th>Actual Price</th>
+        @if(Auth::user()->role_id == 1 )
+>>>>>>> heroku2
             <th colspan="3">Action</th>
         </tr>
 

@@ -1,6 +1,47 @@
+<<<<<<< HEAD
 <!-- Category Id Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('category_id', 'Category Id:') !!}
+=======
+
+
+<!-- Title Field -->
+<div class="form-group col-md-12">
+    {!! Form::label('title', 'Títol:') !!}
+    {!! Form::text('title', null, ['class' => 'form-control']) !!}
+</div>
+
+
+<div class="form-group  col-md-12">
+  <label for="category_id">Categoria:</label>
+  <select class="form-control" name="category_id" id="category_id">
+    
+    @if(isset($course))
+        <option value="{{ $course->category['id'] }}" > {{ $course->category['name'] }} </option>
+    @endif
+   @foreach($categories as $category)
+          <option value="{{ $category->id }}" > {{ $category->name }} </option>
+    @endforeach
+  </select>
+</div>
+
+<!-- User Id Field
+
+
+
+
+
+-->
+
+<div class="form-group col-sm-6">
+    {!! Form::label('user_id', 'Id Usuari:') !!}
+    {!! Form::number('user_id', null, ['class' => 'form-control']) !!}
+</div>
+
+
+<div class="form-group col-sm-6" >
+    {!! Form::label('category_id', 'Id Categoria:') !!}
+>>>>>>> heroku2
     {!! Form::number('category_id', null, ['class' => 'form-control']) !!}
 </div>
 
@@ -12,13 +53,18 @@
 
 <!-- Sub Title Field -->
 <div class="form-group col-sm-6">
-    {!! Form::label('sub_title', 'Sub Title:') !!}
+    {!! Form::label('sub_title', 'Subtítol:') !!}
     {!! Form::text('sub_title', null, ['class' => 'form-control','maxlength' => 191,'maxlength' => 191]) !!}
 </div>
 
 <!-- Description Field -->
+<<<<<<< HEAD
 <div class="form-group col-sm-12 col-lg-12">
     {!! Form::label('description', 'Description:') !!}
+=======
+<div class="form-group col-sm-12 col-lg-8">
+    {!! Form::label('description', 'Descripció:') !!}
+>>>>>>> heroku2
     {!! Form::textarea('description', null, ['class' => 'form-control']) !!}
 </div>
 
