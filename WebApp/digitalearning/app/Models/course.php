@@ -79,5 +79,12 @@ class Course extends Model
         'updated_at' => 'nullable'
     ];
 
+    public function category(){
+        return $this->belongsTo('App\Models\Category');
+    }
+
+    public function user(){
+        return $this->belongsTo('App\Models\User');
+    }
     
 }
