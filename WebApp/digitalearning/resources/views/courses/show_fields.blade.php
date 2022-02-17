@@ -1,7 +1,7 @@
 <!-- Category Id Field -->
 <div class="col-sm-12">
     {!! Form::label('category_id', 'Category Id:') !!}
-    <p>{{ $course->category_id }}</p>
+  <a href="/categories/{!! $course->category['id']!!}"><p>{{ $course->category_id }}</p></a>
 </div>
 
 <!-- Title Field -->
