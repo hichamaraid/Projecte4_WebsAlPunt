@@ -1,0 +1,11 @@
+{
+    "require": {
+            "php": "^7.3|^8.0",
+            "ext-pgsql": "*"
+    },
+      "scripts": {
+        "post-install-cmd": [
+          "cd digitalearning && composer install"
+        ]
+      }
+     }
