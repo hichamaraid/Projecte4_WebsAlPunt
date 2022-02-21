@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Cursos</h1>
+        <h1 class="titulo-vue">Cursos</h1>
       <div>
           <ul>
                 <li v-for="cur in cursos.name">

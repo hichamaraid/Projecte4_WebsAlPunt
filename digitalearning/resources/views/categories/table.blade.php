@@ -23,7 +23,7 @@ echo \Illuminate\Support\Str::limit($category->description ?? '',150,' ...');
  
     {!! Form::open(['route' => ['categories.destroy', $category->id], 'method' => 'delete']) !!}
                     <div class='btn-group'>
-                    <a href="{!! route('categories.show',[$category->id]) !!}" class="btn btn-primary mr-5">View Category</a>
+                    <a href="{!! route('categories.show',[$category->id]) !!}" class="btn btn-primary mr-5">Veure Categoria</a>
 
                     @if (Auth::user()->role_id == 1)
 

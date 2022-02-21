@@ -22,13 +22,16 @@
     <header>
         <nav>
             <div class="logo-section">
-                <a class="logo">DigitalEarning</a>
+            <a href="{{ route('welcome') }}">DigitaLearning</a></li>
+              
+
+                
                 <button class="hb-button"><i class="fas fa-bars"></i></button>
             </div>
             <ul>
-                <li><a href="{{ route('welcome') }}">INICI </a></li>
-                <li><a href="{{ route('nosotros') }}">NOSALTRES</a></li>
-                <li><a href="{{ route('contacto') }}">CONTACTE</a></li>
+                <li class="lis"><a href="{{ route('welcome') }}">INICI</a></li>
+                <li class="lis"><a href="{{ route('nosotros') }}">NOSALTRES</a></li>
+                <li class="lis"><a href="{{ route('contacto') }}">CONTACTE</a></li>
             
         
 
@@ -46,12 +49,20 @@
 
           @if (Route::has('login') && Auth::check())
               
-                   <li > <a style="background-color: yellow; border-radius:5px; margin-right: 5px; " class="navbar-item" href="{{ url('/home') }}"><b style="color: black;">COMPTE</b> </a></li>
+                   <li class="lis" > <a style="background-color: yellow; border-radius:5px; margin-right: 5px; " class="navbar-item" href="{{ url('/home') }}"><b style="color: black;">COMPTE</b> </a></li>
                
             @elseif (Route::has('login') && !Auth::check())
-               
-                  <li>  <a style="background-color: blue; border-radius:5px; margin-right: 5px; color: white;" class="navbar-item" href="{{ url('/login') }}">LOGIN</a></li>
-                  <li>  <a style="background-color: green; border-radius:5px; margin-right: 5px; color: white;" class="navbar-item" href="{{ url('/register') }}">REGISTRAR</a></li>
+                  <!--
+                  <li>  
+                    <a class="navbar-item" href="{{ url('/register') }}">REGISTRAR</a>
+                  </li>
+                  -->
+
+                  <li>  
+                    <a style="background: transparent;" href="{{ url('/login') }}" id="iniciar-sesion" >
+                      <img src="{{ asset('Images/iniciar-sesion.png')}}" alt="logo" id="icono-iniciar-sesion" >
+                    </a>
+                  </li>
             @endif
             </ul>
             </div>

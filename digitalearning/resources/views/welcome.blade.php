@@ -34,7 +34,7 @@
 
 <div class="flex-home">
     <div class="flex-one">
-      <h1 class="titulos"><strong>DigitalEarning</strong></h1>
+      <h1 class="titulos"><strong>DigitaLearning</strong></h1>
       <p class="text-home">Vols continuar formant-te i continuar aprenent cada dia més i més? Ets al lloc perfecte per millorar les teves habilitats i coneixements.</p>
     </div>
 
