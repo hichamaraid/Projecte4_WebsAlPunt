@@ -1,14 +1,48 @@
-/*window.sr = ScrollReveal();
+window.sr = ScrollReveal();
 
-    sr.reveal('.navbar-menu', {
-        delay: 1000
+    sr.reveal('nav', {
+        delay: 600
     });
 
-    sr.reveal('.center-nosotros', {
-        duration: 3000,
-        origin: 'bottom',
-        distance: '-100px'
-    });*/
+    sr.reveal('.img-home', {
+      duration: 3000,
+      origin: 'right',
+      distance: '-100px'
+    });
+
+    sr.reveal('.flex-home', {
+      duration: 3000,
+      origin: 'right',
+      distance: '-100px'
+  });
+
+  sr.reveal('.flex-home-two', {
+    duration: 3000,
+    origin: 'left',
+    distance: '-100px'
+  });
+
+  sr.reveal('#fondo-contacto', {
+    delay: 600
+  });
+
+  sr.reveal('#form', {
+    duration: 3000,
+    origin: 'left',
+    distance: '-100px'
+  });
+
+  sr.reveal('#div-img-nosotros', {
+    delay: 600
+  });
+
+  sr.reveal('.center-nosotros', {
+    duration: 3000,
+    origin: 'top',
+    distance: '-100px'
+  });
+
+  
 
 
 
