@@ -5,7 +5,7 @@
     <div class="text-img-homee"  >
         <p class="text-stilo" style="font-size: 20px;"><strong>Aprendre Interessadament</strong></p>
         <p class="text-sub-stilo"><strong>Aprèn per part teva, formar-te i poder ser el millor.</strong></p>
-        <img src="{{ asset('Images/libro.png')}}" alt="fdf" id="foto-home">
+        <img src="{{ asset('Images/conocimiento.png')}}" alt="fdf" id="foto-home">
     </div>
 </div>
 
@@ -96,13 +96,13 @@
 
 
 
-
+<!--
 <section class="section" id="app">
     <div class="container">
       <welcome></welcome>
     </div>
 </section>
-
+-->
   @include('Footer')
 
   </body>
